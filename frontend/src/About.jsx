@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './about.css'
-import myphoto from './assets/Screenshot_2024-02-14_192258-Photoroom.png-Photoroom-Photoroom-removebg-preview.png'
 import myphoto2 from './assets/Profile picture (1).png'
 import needle from './assets/1000_F_516985222_rwPURXYIEWQirdzuDtUwdHXB7bGHvRfc-removebg-preview.png'
 import music from './assets/texttovoice.mp3'

@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
-import logo from './assets/Satyam.png'
+
 import './navbar.css'
-import colorsplash from './assets/colorsplash.png'
+
 import logo2 from './assets/Group 19.png'
 import emailsvg from './assets/wired-outline-177-envelope-send.gif'
 function Navbar() {
