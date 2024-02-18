@@ -1,0 +1,114 @@
+.footerouter{
+    width: auto;
+    background: #1c1b1b;
+    height: 60vh;
+    padding: 2rem 8rem;
+}
+.footercontent{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.footerleft{
+    display: flex;
+  flex-basis: 37%;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+.foot-address{
+   
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.foot-email{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.footerheading{
+    font-size: 2rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+}
+.foot-subheading{
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.foot-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 42%;
+}
+.foot-link{
+    background: #3b3a3a;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #626262;
+    border-bottom: none;
+    border-right: none;
+}
+.footerright{
+    flex-basis: 42%;
+    height: 100%;
+    padding: 1rem;
+    background: #3b3a3a;
+    border-radius: 37px;
+    box-sizing: border-box;
+    border: 2px solid #808080a8;
+    border-bottom: none;
+    border-right: none;
+}
+.footerright form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.footerright form input{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: #2f2e2e;
+    margin-left: 10px;
+}
+.footerright form textarea{
+    height: 213px;
+    border-radius: 25px;
+    padding: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background: #2f2e2e;
+    resize: none;
+}
+.footerright form button{
+    height: 50px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #151114;
+}
+.inputwrapper{
+    display: flex;
+    background: #2f2e2e;
+    border-radius: 25px;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.inputwrapper input{
+    width: 100%;
+}

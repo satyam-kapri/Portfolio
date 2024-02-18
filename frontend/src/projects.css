@@ -1,0 +1,126 @@
+.projectsouter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 8rem;
+    margin-top: 10rem;
+    scroll-margin-top: 5rem;
+}
+.projectsheading{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(68, 68, 68);
+    width: 50%;
+    padding: 0 30px;
+    border-left: 2px solid gray;
+    position: relative;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.2rem;
+}
+.projectsheading::before{
+    content: 'MY WORK';
+    position: absolute;
+    transform: rotateZ(-90deg);
+    left: -56px;
+    top: 44px;
+    background: #efefef;
+    padding: 0px 20px;
+    color: gray;
+    font-size: 1rem;
+}
+.projectsheading span:first-child{
+    font-size: 2.7rem;
+    color: black;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+}
+.projectsallcards{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 2rem;
+}
+.projectsallcards .card{
+    overflow: hidden;
+    height: 360px;
+    border-radius: 34px;
+    flex: 0.5;
+    margin: 0 10px 0 0;
+    transition: all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    position: relative;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.projectsallcards .card >img{
+height: 360px;
+}
+.projectsallcards .card .card-gradient{
+    background: linear-gradient(to top, #050505, #00000059);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    transition: all 0.5s;
+}
+.projectsallcards .card .card-gradient span{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: 'Poppins',sans-serif;
+    width: max-content;
+    transform-origin: left;
+    cursor: pointer;
+}
+
+.projectsallcards .card .card-gradient >div{
+    position: absolute;
+    bottom: 1rem; 
+    left: 2rem;
+    width: 500px;
+
+}
+
+
+.upicon
+{
+    width: 50px;
+    height: 50px;
+}
+
+.playbtn{
+    width: 100px;
+    height: 42px;
+    padding: 0rem 1rem;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    outline: none;
+    border: none;
+    width: auto;
+    margin-right: 2rem;
+    font-weight: bold;
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+.playbtn:disabled{
+    background: gray;
+    cursor: default;
+}
+.projectlink{
+  cursor: pointer;
+    color: white;
+    text-decoration: underline;
+    font-family: 'Roboto';
+}
+.btnandlink{
+display: flex;
+align-items: flex-end;
+height: 50px;
+margin: 2rem 2rem 2rem 0;
+}

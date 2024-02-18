@@ -1,0 +1,35 @@
+.achieve-outer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* color: #3a3a3a; */
+    height: 74%;
+    padding: 4rem;
+}
+.achieve-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.achieve-heading span:first-child{
+    font-family: 'Poppins',sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.achieve-rightside{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 66%;
+}
+.achieve-rightside div{
+    background: #444242;
+    padding: 10px 1rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    width: 450px;
+    
+}

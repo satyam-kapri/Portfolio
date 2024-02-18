@@ -1,0 +1,38 @@
+.clock{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 113px;
+    height: 305px;
+    top: -94px;
+    z-index: -2 ;
+}
+.hour{
+    width: 16px;
+    height: 75%;
+    position: absolute;
+    background-color: black;
+    animation: clockanim 15s steps(12) infinite;
+    bottom: 0;
+    transform-origin: bottom;
+    border-radius: 10px;
+    
+}
+.minute{
+    width: 10px;
+    height: 90%;
+    background-color: #f3af00;
+    animation: clockanim 5s steps(24) infinite;
+    position: absolute;
+    bottom: 0;
+    transform-origin: bottom;
+    border-radius: 10px;
+    
+}
+@keyframes clockanim {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}

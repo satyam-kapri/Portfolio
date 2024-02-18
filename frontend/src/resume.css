@@ -1,0 +1,36 @@
+.resumeouter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 8rem;
+
+}
+.resumeheading{
+    /* color:#3a3a3a; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 4rem;
+}
+.resumeheading span:first-child{
+    font-size:3rem ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.resumeimg{
+    width: 273px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.downloadbtn{
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #4f452bc7;
+    margin-top: 2rem;
+    cursor: pointer;
+    color: #fbb501;
+    font-size: 1rem;
+    font-weight: bold;
+}

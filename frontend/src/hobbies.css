@@ -1,0 +1,110 @@
+.hobbiesouter{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* color:#3a3a3a; */
+    padding: 2rem;
+   
+}
+.hobbiesheading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-basis: 35%;
+}
+.hobbiesheading span:first-child{
+    font-size: 3rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+}
+.hobbiesrightside{
+    display: flex;
+    /* align-items: center;
+    justify-content: space-between; */
+    flex-basis: 45%;
+    flex-wrap: wrap;
+}
+.hobbiesrightside div{
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 6px 6px;
+    width: 80px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.hobbiesrightside div span{
+    background: orange;
+    color: white;
+    padding: 0 5px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 0.2s;
+}
+.hobbiesrightside div:not(:hover) span{
+    transform: scale(0);
+}
+.hobbiesrightside div:nth-child(1){
+    background: url('./assets/guitar.webp'),white;
+    background-size: cover;
+    height: 133px;
+    width: 100px;
+}
+
+.hobbiesrightside div:nth-child(2){
+background: url('./assets/Basketball.jpeg'),white;
+background-size: cover;
+width: 106px;
+height: 92px;
+
+}
+.hobbiesrightside div:nth-child(3){
+    background: url('./assets/badminton.avif'),white;
+    background-size: cover;
+    width: 162px;
+    height: 75px;
+}
+.hobbiesrightside div:nth-child(4){
+    background: url('./assets/Chess.jpg'),white;
+    background-size: cover;
+    width: 145px;
+
+}
+.hobbiesrightside div:nth-child(5){
+    background: url('./assets/design.avif'),white;
+    background-size: cover;
+    height: 114px;
+    transform: translateY(-44px);
+}
+.hobbiesrightside div:nth-child(6){
+    background: url('./assets/BGMI.avif'),white;
+    background-size: cover;
+    transform: translateY(-59px);
+    width: 140px;
+    height: 104px
+}
+.hobbiesrightside div:nth-child(7){
+    background: url('./assets/netflix.png'),white;
+    background-size: cover;
+    transform: translateY(-42px);
+    width: 109px;
+    height: 81px;
+}
+.hobbiesrightside div:nth-child(8){
+    background: url('./assets/coding.jpg'),white;
+    background-size: cover;
+    transform: translateY(-43px);
+    width: 114px;
+    height: 82px;
+}
+.hobbiesrightside div:nth-child(9){
+    background: url('./assets/music.webp'),white;
+    background-size: cover;
+    transform: translateY(-68px);
+    width: 142px;
+    height: 106px;
+}

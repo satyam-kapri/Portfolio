@@ -1,0 +1,41 @@
+.skillsouter{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* color: #3a3a3a; */
+    padding: 2rem;
+    
+}
+.skillsheading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-basis: 35%;
+}
+.skillsheading span:first-child{
+    font-size: 3rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+}
+.skillsrightside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 49%;
+    flex-wrap: wrap;
+  
+}
+.skillsrightside div{
+    background: #444242;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
