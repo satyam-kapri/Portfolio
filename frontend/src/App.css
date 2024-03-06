@@ -67,9 +67,10 @@ overflow: hidden;
 }
 .half-image img{
   position: relative;
-    width: 340px;
-    top: -8px;
-    right: -5px;
+  width: 354px;
+  top: -1px;
+  right: -3px;
+
 }
 .satyamheading {
   font-family: 'Bowlby One SC', sans-serif;
