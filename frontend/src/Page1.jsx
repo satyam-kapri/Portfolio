@@ -15,6 +15,7 @@ import paintbursh from './assets/Group 20.png'
 import pencil from './assets/pencil.png'
 import Achievements from './Achievements'
 import Hobbies from './Hobbies'
+import mainpic3 from './assets/mainpic3.png'
 function Page1() {
     const [open,setopen]=useState(null);
     
@@ -36,7 +37,7 @@ function Page1() {
         {/* <div className='bgplane'><img src={daytonight} alt="" /></div> */}
         {/* <Clock></Clock> */}
         <div className='center-pic'>
-         <div><img src={mainpic} style={{width:'340px'}}></img></div>
+         <div><img src={mainpic3} style={{width:'340px'}}></img></div>
          <div className='half-image'><img src={mainpic2}></img></div>
       </div>
       </div>
