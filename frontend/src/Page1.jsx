@@ -1,20 +1,19 @@
-import { useState } from 'react'
+import { lazy, Suspense, useState } from 'react'
 import './App.css'
 import Navbar from './Navbar'
-import mainpic from './assets/mainpic.png'
 import mainpic2 from './assets/mainpic2.png'
-import resumeimg from './assets/looking through resumes.png'
-import skillsimg from './assets/Screwdriver and wrench as settings.png'
-import trophyimg from './assets/Gold trophy in air.png'
-import hobbieimg from './assets/color palette and brush.png'
+import resumeimg from './assets/looking through resumes.png';
+import skillsimg from './assets/Screwdriver and wrench as settings.png';
+import trophyimg from  './assets/Gold trophy in air.png';
+import hobbieimg from './assets/color palette and brush.png';
 import Scale from './Scale'
-import Resume from './Resume'
+const Resume=lazy(()=>import('./Resume')) 
 import downbtn from './assets/system-solid-12-arrow-down.gif'
 import Skills from './Skills'
-import paintbursh from './assets/Group 20.png'
+const paintbursh=lazy(()=>import('./assets/Group 20.png'));
 import pencil from './assets/pencil.png'
-import Achievements from './Achievements'
-import Hobbies from './Hobbies'
+const Achievements=lazy(()=>import('./Achievements'));
+const Hobbies=lazy(()=>import('./Hobbies'))
 import mainpic3 from './assets/mainpic3.png'
 function Page1() {
     const [open,setopen]=useState(null);
@@ -47,10 +46,10 @@ function Page1() {
       <div className='bottom-outer'>
       <div className='moreinfo' style={open!==null ?{height:'550px',transform: 'translateY(-450px)'}:{}}>
         <Scale></Scale>
-        {open==="resume"&&<Resume></Resume>}
-        {open==="skills"&&<Skills></Skills>}
-        {open==="achievements"&&<Achievements></Achievements>}
-        {open==="hobbies"&&<Hobbies></Hobbies>}
+        {open==="resume"&&<Suspense><Resume></Resume></Suspense>}
+        {open==="skills"&&<Suspense><Skills></Skills></Suspense>}
+        {open==="achievements"&&<Suspense><Achievements></Achievements></Suspense>}
+        {open==="hobbies"&&<Suspense><Hobbies></Hobbies></Suspense>}
       </div>
       <div className='bottom-heading'>
         {open!==null && <img src={downbtn} style={{width:'50px',height:'50px',cursor:'pointer'}} onClick={()=>{setopen(null)}}></img>}
