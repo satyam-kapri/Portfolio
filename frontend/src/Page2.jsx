@@ -6,7 +6,7 @@ import About from './About'
 function Page2() {
   return (
     <div style={{marginTop:'0',background:'#efefef',padding:"10rem 0"}}>
-      <About></About>
+       <About></About>
        <Projects></Projects>
      
     </div>

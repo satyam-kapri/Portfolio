@@ -33,13 +33,13 @@ function Projects() {
     <div id='projects' className='projectsouter'>
      
       <div className='projectsheading'>
-        <span>See My Works Which Will Amaze You!</span>
+        <span>See My Work !</span>
         <span style={{width:'78vw'}}>We develop the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.</span>
       </div>
       <div className='projectsallcards'>
       { projectsarr.map((card)=>{
            return (
-            <div key={card.idx} className="card" onClick={()=>{setactive(card.idx);}} style={active===card.idx?{flex:'2'}:{}}><img src={card.img}></img><div className='card-gradient' onClick={()=>{if(active===card.idx)if(open===card.idx)setopen(null);else setopen(card.idx)}} style={active===card.idx?(open===card.idx?style2:style1):{}}><div><div><span style={active!==card.idx?{transform:'rotateZ(-90deg)'}:{}}>{card.name}</span>{open===null&&<img className='upicon' src={upicon}></img>}</div>{open===card.idx &&(<><div>{card.desc}</div><div className='btnandlink'><a href={card.live}><button className='playbtn' disabled={card.live===""}>Show Live</button></a><a href={card.url} className='projectlink'>GitHub Link</a></div></>)}</div></div></div>
+            <div key={card.idx} className="card" onClick={()=>{setactive(card.idx);}} style={active===card.idx?{flex:'2'}:{}}><img src={card.img}></img><div className='card-gradient' onClick={()=>{if(active===card.idx)if(open===card.idx)setopen(null);else setopen(card.idx)}} style={active===card.idx?(open===card.idx?style2:style1):{}}><div><div><span style={active!==card.idx?{transform:'rotateZ(-90deg)'}:{}}>{card.name}</span>{open===null&&<img className='upicon' src={upicon}></img>}</div>{open===card.idx &&(<><div>{card.desc}</div><div className='btnandlink'><a href={card.live} target='_blank'><button className='playbtn' disabled={card.live===""}>Show Live</button></a><a href={card.url} className='projectlink'>GitHub Link</a></div></>)}</div></div></div>
            );
         })
 

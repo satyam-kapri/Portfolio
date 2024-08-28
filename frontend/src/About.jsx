@@ -3,7 +3,7 @@ import './about.css'
 import myphoto2 from './assets/Profile picture (1).png'
 import needle from './assets/1000_F_516985222_rwPURXYIEWQirdzuDtUwdHXB7bGHvRfc-removebg-preview.png'
 import music from './assets/texttovoice.mp3'
-
+// import song from './assets/Heeriye_64-(PagalWorld).mp3'
 function About() {
   const [audio]=useState(new Audio(music));
   useEffect(()=>{
