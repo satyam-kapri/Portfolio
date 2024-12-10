@@ -36,7 +36,7 @@ function Page1() {
         {/* <div className='bgplane'><img src={daytonight} alt="" /></div> */}
         {/* <Clock></Clock> */}
         <div className='center-pic'>
-         <div><img src={mainpic3} style={{width:'340px'}}></img></div>
+         <div className='main-image'><img src={mainpic3}></img></div>
          <div className='half-image'><img src={mainpic2}></img></div>
       </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import resumeimg from './assets/resumeimg.png'
 import './resume.css'
-import pdf from './assets/satyam_new_resume.pdf'
+import pdf from './assets/SatyamKapriGoodResume2.pdf'
 function Resume() {
   
   const downloadFile = async () => {
@@ -12,7 +12,7 @@ function Resume() {
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', 'satyam_new_resume.pdf');
+      link.setAttribute('download', 'SatyamKapriGoodResume2.pdf');
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

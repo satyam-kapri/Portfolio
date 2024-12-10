@@ -47,7 +47,7 @@ function Navbar() {
   }
  
   return (
-    <div style={colorChange?style2:style1}>
+    <div style={colorChange?style2:style1} className='navbar'>
       <img src={logo2} style={{width:'8rem'}}/>
       {/* <img src={colorsplash} className='colorsplash'/> */}
       <div className='navright'>

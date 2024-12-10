@@ -1,5 +1,7 @@
 .scale{
-    width: 70vw;
+  position: relative;
+  left: -8%;
+    width: 81vw;
   height: 80px;
   background: #F3AF00;
   border-radius: 15px;
@@ -22,7 +24,7 @@
     position: absolute;
     bottom: -15px;
     color: black;
-    font: 16px/1 sans-serif;
+    font-family:sans-serif;
    }
    .ruler .mm {
     height: 5px;
